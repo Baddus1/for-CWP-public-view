@@ -1,0 +1,19 @@
+import pyperclip
+# ^ Required to copy to clipboard
+print("Baddus from SoE made this, Xboxalpha@hotmail.com, Don't judge that email address.")
+Antidepressants = 1
+# The line above and below are required to keep the console running until stopped manually
+while Antidepressants > 0:
+    Player_ID = input("Enter Server ID: ")
+    Phone_Number = input("Enter five digits for SSN: ")
+    First_Name = input("Enter a first name: ")
+    Last_Name = input("Enter a last name: ")
+    DOB = input("Enter a date of birth. Year-Day-Month Ex;1996-07-13: ")
+    Result = "/me hands over their ID\n^*^4 [ID]^r: TID #: ^2"+Player_ID+"^r SSN #: ^2 "+Phone_Number+" ^r | First: ^2"+First_Name+" ^0/ Last: ^2 "+Last_Name+" ^0| DOB: ^2 "+DOB+" ^0|_"
+    #\/ Copies to clipboard.
+    pyperclip.copy(Result)
+    print("\nCopied to Clipboard!\n" + Result)
+#
+# TODO: Add GUI
+# TODO: Add Google Sheets Connection
+# TODO: Clean up Microsoft Real-time security bug regarding Save-to-Clipboard
